@@ -1,0 +1,24 @@
+{
+  "action_id": "refund-ticket-4821",
+  "as_of": "2026-10-08T21:30:00Z",
+  "impact": "medium",
+  "candidates": [
+    { "id": "account-a", "prior": 0.5 },
+    { "id": "account-b", "prior": 0.5 }
+  ],
+  "observations": [
+    {
+      "id": "crm-email-match",
+      "observed_at": "2026-10-08T21:22:00Z",
+      "independence_group": "crm",
+      "likelihoods": { "account-a": 0.98, "account-b": 0.02 }
+    },
+    {
+      "id": "invoice-reference",
+      "observed_at": "2026-10-08T21:25:00Z",
+      "independence_group": "billing",
+      "likelihoods": { "account-a": 0.95, "account-b": 0.05 }
+    }
+  ],
+  "probes": []
+}

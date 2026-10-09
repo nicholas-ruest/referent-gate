@@ -1,0 +1,15 @@
+max_evidence_age_seconds = 3600
+min_independent_groups = 2
+max_probe_cost = 5.0
+
+[thresholds.low]
+min_top_probability = 0.70
+min_margin = 0.30
+
+[thresholds.medium]
+min_top_probability = 0.85
+min_margin = 0.60
+
+[thresholds.high]
+min_top_probability = 0.97
+min_margin = 0.90
